@@ -182,7 +182,7 @@ return [
          * Custom Service Providers
          */
         Dingo\Api\Provider\LaravelServiceProvider::class,
-
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
     ],
 
     /*
@@ -231,6 +231,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /*
+         * Custom Facades
+         */
+        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
     ],
 
 ];
